@@ -5,6 +5,9 @@ import msgicon from './assets/message.svg';
 import home from './assets/home.svg';
 import save from './assets/bookmark.svg';
 import rocket from './assets/rocket.svg';
+import sendbtn from './assets/send.svg';
+import userIcon from './assets/user-icon.png';
+import gptImgLogo from './assets/chatgptLogo.svg';
 
 function App() {
   return (
@@ -38,7 +41,20 @@ function App() {
           </div>
         </div>
 
-        <div className="main"></div>
+        <div className="main">
+          <div className="chats">
+            <div className="chat"><img className='chatimg' src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste quis mollitia ea dolor iusto error laborum optio, suscipit eum possimus maiores qui veniam vel rem magni odio recusandae consectetur!</p></div>
+            <div className="chat bot"><img className='chatimg' src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ad, cumque mollitia modi ipsam animi vitae sunt accusamus quam deserunt velit fugit quis ratione consequuntur doloremque consectetur praesentium asperiores impedit ab iure ea accusantium! Porro dolores corporis assumenda illo neque, voluptatem perspiciatis placeat! Iste, officia? Esse ratione amet quae, minus quasi suscipit dolore id pariatur iste illum laudantium saepe fugit qui debitis! Accusamus eos nesciunt, facilis obcaecati quidem, sint provident nostrum unde, iste totam tempore accusantium nam error officia quasi magni? Fuga laudantium esse minima aspernatur, est neque, labore fugit iste soluta voluptates obcaecati sunt quisquam temporibus officiis repellat voluptate?</p></div>
+
+          </div>
+          
+          <div className="chatfooter">
+            <div className="input">
+              <input type="text" placeholder='Send a Message' /><button className="send"><img src={sendbtn} alt="send" /></button>
+            </div>
+            <p>ChatGPT may produce inaccurate information about people, places or facts. ChatGPT April 20 Version</p>
+          </div>
+        </div>
       </div>
     </>
   );
